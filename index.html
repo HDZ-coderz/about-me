@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+    <head>
+        <script src="https://kit.fontawesome.com/e1be23f724.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About me</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body onload="on_load()">
+    <dialog id="dc">
+        <button onclick="cls_dialog()"class="cls">&times;</button><br>
+        <div class="container">
+        <iframe src="https://discord.com/widget?id=1089196293215244288&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe><br>
+        <button class="discord_btn center" onclick="open_link('discord')">Join server</button>
+        </div>
+    </dialog>
+    <div id="group0" class="anim">
+        <div class="circle center"></div><br>
+        <H1 class="text_center">HD</H1>
+    </div>
+    <div id="group1" class="anim">
+        <div class="info_box">
+            <p id="text">
+            </p><br>
+        </div>
+        <div class="container flex_center" style="background-color:rgba(0,0,0,0.5);">
+            <nav id="page_btns"><button class="page_btn" onclick="previous_page()" id="previous" disabled>&lt; Previous</button><button class="page_btn" onclick="next_page()" id="next">Next &gt;</button></nav>
+        </div>
+        <br>
+        <nav id="connections">
+            <button class="connections_btn" onclick="open_link('spotify')"><i class="fa-brands fa-spotify"></i> </button>
+            <button class="connections_btn" onclick="open_link('insta')"><i class="fa-brands fa-instagram" disabled></i> </button>
+            <button onclick="open_dialog()" class="connections_btn"><i class="fa-brands fa-discord"></i></button>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
